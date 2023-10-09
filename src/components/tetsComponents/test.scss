@@ -1,0 +1,52 @@
+.main {
+  width: auto;
+  height: 710px;
+}
+
+.parent1 {
+  width: 500px;
+  height: 500px;
+  background-color: greenyellow;
+  .parent2 {
+    .child--absolute {
+      width: min-content;
+      height: min-content;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      bottom: 100px;
+    }
+  }
+}
+
+.child--relative {
+  position: relative;
+  background-color: rgba(46, 185, 31, 0.26);
+}
+.child--fixed {
+  position: fixed;
+  background-color: blue;
+}
+.child--sticky {
+  position: sticky;
+  background-color: rgba(236, 79, 30, 0.97);
+}
+
+.parent {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+}
+
+.child {
+  position: relative;
+  //top: 20px; /* Смещение на 20px вниз относительно исходного положения */
+  //left: 30px; /* Смещение на 30px вправо относительно исходного положения */
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
