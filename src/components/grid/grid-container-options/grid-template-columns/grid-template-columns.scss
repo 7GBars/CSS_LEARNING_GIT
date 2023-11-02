@@ -5,6 +5,12 @@
 }
 .grid-container--with-line-names {
   display: grid;
-  grid-template-columns: [start] 100px [line2] 500px[line3] 100px [end];
+  grid-template-columns: [start] 100px [line2] 500px [line3] 100px [end];
   grid-template-rows: [row-start] 500px [row-line1] 200px [row-end];
+}
+
+.grid-container--repeat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 25vh);
 }
