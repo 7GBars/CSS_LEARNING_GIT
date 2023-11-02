@@ -1,14 +1,14 @@
 import React from 'react';
-import { TestsComponent } from "./components";
+
 import './App.css';
+import {GridTemplateColumns} from "./components/grid/grid-container-options";
 
 
 
 function App() {
   return (
     <div className="App">
-
-      <TestsComponent />
+      <GridTemplateColumns/>
     </div>
   );
 }

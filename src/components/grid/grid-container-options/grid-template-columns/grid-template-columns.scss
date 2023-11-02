@@ -1,0 +1,10 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 150px auto 50px;
+  grid-template-rows: 250px 40vh 10rem;
+}
+.grid-container--with-line-names {
+  display: grid;
+  grid-template-columns: [start] 100px [line2] 500px[line3] 100px [end];
+  grid-template-rows: [row-start] 500px [row-line1] 200px [row-end];
+}
