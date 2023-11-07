@@ -1,0 +1,6 @@
+.grid-container1 {
+  display: grid;
+  height: 300px;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 100px));
+
+}

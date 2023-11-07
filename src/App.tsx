@@ -1,14 +1,14 @@
 import React from 'react';
 
 import './App.css';
-import {GridTemplateColumns} from "./components/grid/grid-container-options";
+import {AutoFill} from "./components/grid/grid-container-options/auto-fill_auto-fit/auto-fill"
 
 
 
 function App() {
   return (
     <div className="App">
-      <GridTemplateColumns/>
+      <AutoFill/>
     </div>
   );
 }
