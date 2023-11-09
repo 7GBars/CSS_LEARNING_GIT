@@ -1,0 +1,22 @@
+.grid-container-auto-rows {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 150px min-content;
+  grid-auto-rows: 100px;
+  gap: 0.3rem;
+}
+.item-auto-rows {
+  border: 1px solid black;
+  color: white;
+  padding: 1rem;
+  background-color: rgba(46, 185, 31, 0.26);
+}
+.grid-container-auto-flow {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: row;
+  .span-three {
+    grid-row: span 2;
+  }
+}
