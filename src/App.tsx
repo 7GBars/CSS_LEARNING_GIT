@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Popup} from "./components/popup/Popup";
+import {Transition} from "./components/animation/transition/Transition";
 import './App.css';
 
 
@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Popup/>
+      <Transition/>
     </div>
   );
 }
