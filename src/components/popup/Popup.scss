@@ -1,3 +1,17 @@
+@keyframes hideSidebar {
+  to {
+    flex: 0;
+    width: 0;
+    overflow: hidden;
+  }
+}
+
+@keyframes expandPageContent {
+  to {
+    flex: 1;
+  }
+}
+
 .modal-test {
   font-size: 1.2rem;
 
@@ -24,8 +38,9 @@
       gap: 5px;
 
       .modal-content__sidebar {
-        flex: 0 0 max-content;
+        flex: 0 0 100px;
         background-color: greenyellow;
+        transition: all 0.3s;
         ol {
           list-style-type: none;
         }
@@ -53,6 +68,12 @@
           padding: 1rem;
         }
       }
+    }
+
+    .modal-content.sidebar-hidden .modal-content__sidebar {
+      flex: 0 0 0;
+      overflow: hidden;
+      transition: all 0.5s ease-in;
     }
   }
 
