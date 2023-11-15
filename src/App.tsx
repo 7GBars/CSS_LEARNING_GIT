@@ -1,14 +1,14 @@
 import React from 'react';
 
+import {Popup} from "./components/popup/Popup";
 import './App.css';
-import {GridAutoRows} from "./components/grid/grid-container-options/grid-auto-columns, grid-auto-rows/grid-auto-rows";
 
 
 
 function App() {
   return (
     <div className="App">
-      <GridAutoRows/>
+      <Popup/>
     </div>
   );
 }
