@@ -2,5 +2,11 @@
   display: grid;
   height: 300px;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 100px));
-
+  gap: 1rem;
+  .item1 {
+    padding: 0.5rem;
+    background-color: green;
+    border: 1px solid rgba(173, 255, 47, 0.67);
+    max-width: 100px;
+  }
 }
